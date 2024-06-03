@@ -41,4 +41,3 @@ instance/
 docker-compose.override.yml
 .envrc
 .env.d/*
-Dockerfile
