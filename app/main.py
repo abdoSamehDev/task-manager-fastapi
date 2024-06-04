@@ -8,6 +8,11 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 
+@app.get("/")
+async def welcome():
+    return {"status": "ok", "message": "Welcome to Task Manager"}
+
+
 @app.get("/status")
 async def get_status():
     return {"status": "ok", "message": "Application is running smoothly"}

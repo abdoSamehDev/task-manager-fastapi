@@ -13,5 +13,7 @@ services:
       - ./app/.env
     depends_on:
       - db
+    ports:
+      - "8000:8000"
 volumes:
   postgres_data:
